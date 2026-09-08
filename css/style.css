@@ -1,0 +1,366 @@
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    Inter,
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
+
+
+/* ===============================
+   SECTIONS
+================================ */
+
+.section-padding {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+
+/* ===============================
+   SECTION HEADINGS
+================================ */
+
+.eyebrow {
+  color: #087A2E;
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+
+.section-title {
+  margin-top: 0.55rem;
+  font-size: clamp(2rem, 4vw, 3.4rem);
+  line-height: 1.08;
+  font-weight: 900;
+  letter-spacing: -0.035em;
+  color: #071B52;
+}
+
+
+/* ===============================
+   NAVIGATION
+================================ */
+
+.nav-link {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #334155;
+}
+
+
+.nav-link:hover {
+  color: #087A2E;
+}
+
+
+.mobile-link {
+  padding: 0.6rem 0;
+  font-weight: 700;
+  color: #334155;
+}
+
+
+.mobile-link:hover {
+  color: #087A2E;
+}
+
+
+/* ===============================
+   PROGRAM CARDS
+================================ */
+
+.program-card,
+.help-card,
+.donation-card,
+.story-placeholder {
+  border: 1px solid #e2e8f0;
+  border-radius: 1.25rem;
+  background: white;
+  padding: 1.5rem;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.program-card:hover,
+.help-card:hover,
+.donation-card:hover,
+.story-placeholder:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 18px 45px rgba(15, 23, 42, 0.08);
+}
+
+
+.program-card h3,
+.help-card h3,
+.donation-card h3,
+.story-placeholder h3 {
+  margin-top: 1rem;
+
+  color: #071B52;
+
+  font-size: 1.12rem;
+
+  font-weight: 850;
+}
+
+
+.program-card p,
+.help-card p,
+.story-placeholder p {
+  margin-top: 0.55rem;
+
+  color: #64748b;
+
+  font-size: 0.94rem;
+
+  line-height: 1.65;
+}
+
+
+/* ===============================
+   ICONS
+================================ */
+
+.icon-box,
+.donation-icon {
+  display: grid;
+
+  place-items: center;
+
+  width: 3rem;
+  height: 3rem;
+
+  border-radius: 0.9rem;
+
+  background: #f8fafc;
+
+  font-size: 1.35rem;
+}
+
+
+/* ===============================
+   CHILD JOURNEY
+================================ */
+
+.journey-card {
+  border-top: 4px solid #087A2E;
+
+  border-radius: 1rem;
+
+  background: #f8fafc;
+
+  padding: 1.4rem;
+}
+
+
+.journey-card strong {
+  display: block;
+
+  color: #94a3b8;
+
+  font-size: 0.8rem;
+}
+
+
+.journey-card span {
+  display: block;
+
+  margin-top: 0.35rem;
+
+  color: #071B52;
+
+  font-weight: 900;
+}
+
+
+.journey-card p {
+  margin-top: 0.45rem;
+
+  color: #64748b;
+
+  font-size: 0.85rem;
+
+  line-height: 1.5;
+}
+
+
+/* ===============================
+   IMPACT
+================================ */
+
+.stat-card {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  border-radius: 1.25rem;
+
+  padding: 1.5rem;
+
+  background: rgba(255, 255, 255, 0.05);
+}
+
+
+.stat-card strong {
+  display: block;
+
+  color: #F5C400;
+
+  font-size: 2rem;
+
+  font-weight: 900;
+}
+
+
+.stat-card span {
+  display: block;
+
+  margin-top: 0.35rem;
+
+  color: #cbd5e1;
+
+  font-size: 0.9rem;
+}
+
+
+/* ===============================
+   HELP CARDS
+================================ */
+
+.help-card span {
+  font-size: 1.8rem;
+}
+
+
+.help-card a {
+  display: inline-block;
+
+  margin-top: 1rem;
+
+  color: #087A2E;
+
+  font-size: 0.9rem;
+
+  font-weight: 800;
+}
+
+
+/* ===============================
+   STORIES
+================================ */
+
+.story-placeholder > span {
+  color: #087A2E;
+
+  font-size: 0.75rem;
+
+  font-weight: 900;
+
+  letter-spacing: 0.1em;
+
+  text-transform: uppercase;
+}
+
+
+/* ===============================
+   DONATION
+================================ */
+
+.donation-card dl {
+  margin-top: 1.2rem;
+
+  display: grid;
+
+  gap: 0.75rem;
+}
+
+
+.donation-card dl div {
+  border-bottom: 1px solid #f1f5f9;
+
+  padding-bottom: 0.65rem;
+}
+
+
+.donation-card dt {
+  color: #64748b;
+
+  font-size: 0.7rem;
+
+  font-weight: 800;
+
+  text-transform: uppercase;
+
+  letter-spacing: 0.06em;
+}
+
+
+.donation-card dd {
+  margin-top: 0.2rem;
+
+  color: #071B52;
+
+  font-size: 0.9rem;
+
+  font-weight: 750;
+
+  overflow-wrap: anywhere;
+}
+
+
+/* ===============================
+   COPY BUTTON
+================================ */
+
+.copy-btn {
+  width: 100%;
+
+  border-radius: 0.8rem;
+
+  background: #071B52;
+
+  padding: 0.75rem 1rem;
+
+  color: white;
+
+  font-size: 0.85rem;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  border: none;
+}
+
+
+.copy-btn:hover {
+  background: #087A2E;
+}
+
+
+/* ===============================
+   FOOTER
+================================ */
+
+.footer-link {
+  transition: color 0.2s ease;
+}
+
+
+.footer-link:hover {
+  color: #087A2E;
+}
