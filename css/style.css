@@ -59,19 +59,24 @@ body {
 }
 
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: #087A2E;
 }
 
 
-.mobile-link {
+.mobile-link,
+.mobile-nav-link {
   padding: 0.6rem 0;
   font-weight: 700;
   color: #334155;
 }
 
 
-.mobile-link:hover {
+.mobile-link:hover,
+.mobile-link.active,
+.mobile-nav-link:hover,
+.mobile-nav-link.active {
   color: #087A2E;
 }
 
@@ -236,6 +241,84 @@ body {
   font-size: 0.9rem;
 }
 
+/* ================= IMPACT PAGE ================= */
+
+.impact-stat {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.impact-number {
+    display: block;
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: #087A2E;
+    margin-bottom: 8px;
+}
+
+.impact-stat p {
+    color: #4b5563;
+    font-size: 0.95rem;
+}
+
+.dark-impact-card {
+    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 28px;
+    transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.dark-impact-card:hover {
+    transform: translateY(-4px);
+    background: rgba(255,255,255,0.08);
+}
+
+.transparency-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 22px;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    background: white;
+}
+
+.transparency-card h3 {
+    color: #071B52;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.transparency-card p {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+.document-status {
+    flex-shrink: 0;
+    background: #f3f4f6;
+    color: #6b7280;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+@media (max-width: 640px) {
+
+    .transparency-card {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+}
+
 
 /* ===============================
    HELP CARDS
@@ -258,6 +341,136 @@ body {
   font-weight: 800;
 }
 
+/* ================= GET INVOLVED PAGE ================= */
+
+.involvement-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    padding: 30px 25px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.involvement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.involvement-icon {
+    font-size: 2.7rem;
+    margin-bottom: 20px;
+}
+
+.involvement-card h3 {
+    color: #071B52;
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.involvement-card p {
+    color: #6b7280;
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.involvement-link {
+    color: #087A2E;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.involvement-link:hover {
+    text-decoration: underline;
+}
+
+.involvement-check {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.involvement-check span {
+    width: 26px;
+    height: 26px;
+    min-width: 26px;
+    border-radius: 50%;
+    background: #087A2E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.involvement-check p {
+    color: #4b5563;
+}
+
+.advocacy-card {
+    background: white;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    padding: 28px;
+}
+
+.advocacy-card h3 {
+    color: #071B52;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.advocacy-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 0.92rem;
+}
+
+.skill-tag {
+    display: inline-block;
+    padding: 10px 17px;
+    border-radius: 999px;
+    background: #f3f4f6;
+    color: #071B52;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border: 1px solid #e5e7eb;
+}
+
+.action-step {
+    text-align: center;
+    padding: 20px;
+}
+
+.action-step-number {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #F5C400;
+    color: #071B52;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.action-step h3 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.action-step p {
+    color: #d1d5db;
+    line-height: 1.6;
+    font-size: 0.92rem;
+}
+
 
 /* ===============================
    STORIES
@@ -273,6 +486,107 @@ body {
   letter-spacing: 0.1em;
 
   text-transform: uppercase;
+}
+
+/* ================= STORIES PAGE ================= */
+
+.story-image-placeholder {
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6b7280;
+}
+
+.story-card {
+    background: #ffffff;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.story-card-image {
+    height: 190px;
+    background: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+}
+
+.story-category {
+    display: inline-block;
+    color: #087A2E;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 10px;
+}
+
+.story-card-title {
+    color: #071B52;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.story-card-text {
+    color: #6b7280;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+.story-coming {
+    display: inline-block;
+    background: #f3f4f6;
+    color: #6b7280;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.story-principle {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    padding: 20px;
+    background: #f9fafb;
+    border-radius: 14px;
+}
+
+.story-principle > span {
+    width: 30px;
+    height: 30px;
+    min-width: 30px;
+    border-radius: 50%;
+    background: #087A2E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.story-principle h3 {
+    color: #071B52;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.story-principle p {
+    color: #6b7280;
+    font-size: 0.9rem;
+    line-height: 1.5;
 }
 
 
@@ -322,11 +636,12 @@ body {
 }
 
 
+
 /* ===============================
    COPY BUTTON
 ================================ */
 
-.copy-btn {
+.donation-card .copy-btn {
   width: 100%;
 
   border-radius: 0.8rem;
@@ -344,11 +659,120 @@ body {
   cursor: pointer;
 
   border: none;
+
+  transition: background 0.2s ease, transform 0.15s ease;
 }
 
 
-.copy-btn:hover {
+.donation-card .copy-btn:hover {
   background: #087A2E;
+}
+
+.donation-card .copy-btn:active {
+  transform: translateY(1px);
+}
+
+/* ================================
+   CONTACT PAGE
+================================ */
+
+.contact-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem;
+  background: #f8fafc;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+}
+
+.contact-icon {
+  width: 3rem;
+  height: 3rem;
+  flex-shrink: 0;
+  border-radius: 0.75rem;
+  background: #e8f5ec;
+  color: #087A2E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+}
+
+.contact-input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  background: white;
+  border: 1px solid #d1d5db;
+  border-radius: 0.75rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.contact-input:focus {
+  border-color: #087A2E;
+  box-shadow: 0 0 0 3px rgba(8, 122, 46, 0.1);
+}
+
+.faq-item {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  padding: 1.25rem 1.5rem;
+  font-weight: 700;
+  color: #071B52;
+  list-style: none;
+  position: relative;
+  padding-right: 3rem;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #087A2E;
+}
+
+.faq-item[open] summary::after {
+  content: "−";
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.25rem;
+  color: #6b7280;
+  line-height: 1.7;
+}
+
+.map-placeholder {
+  min-height: 330px;
+  background: #f3f4f6;
+  border: 2px dashed #d1d5db;
+  border-radius: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-link {
+  display: block;
+  color: #bfdbfe;
+  transition: color 0.2s;
+}
+
+.footer-link:hover {
+  color: white;
 }
 
 

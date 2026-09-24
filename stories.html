@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Stories | Send a Child to School Foundation</title>
+
+    <meta name="description"
+        content="Discover stories of education, hope, opportunity, and the people working to help vulnerable children stay in school and build brighter futures.">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#071B52',
+                        foundationGreen: '#087A2E',
+                        foundationYellow: '#F5C400',
+                        foundationOrange: '#F47B20'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="site-header" class="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100">
+
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
+
+            <!-- LOGO -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/IMG-20260830-WA0020.jpg" alt="Send a Child to School Foundation logo" width="100">
+
+                <div class="hidden leading-tight sm:block">
+                    <div class="font-extrabold text-navy">
+                        SEND A CHILD
+                    </div>
+
+                    <div class="text-xs font-semibold tracking-wide text-foundationGreen">
+                        TO SCHOOL FOUNDATION
+                    </div>
+                </div>
+            </a>
+
+            <!-- DESKTOP MENU -->
+            <div id="desktop-menu" class="hidden items-center gap-7 lg:flex">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="impact.html" class="nav-link">Impact</a>
+                <a href="stories.html" class="nav-link active">Stories</a>
+                <a href="get-involved.html" class="nav-link">Get Involved</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- DONATE + MOBILE BUTTON -->
+            <div class="flex items-center gap-2">
+                <a href="donate.html"
+                    class="rounded-full bg-foundationOrange px-5 py-3 text-sm font-bold text-white shadow-sm hover:brightness-95">
+                    Donate Now
+                </a>
+
+                <button id="menu-btn" class="rounded-lg p-2 text-navy lg:hidden" aria-label="Open menu"
+                    aria-expanded="false">
+                    <span class="block h-0.5 w-6 bg-current mb-1.5"></span>
+                    <span class="block h-0.5 w-6 bg-current mb-1.5"></span>
+                    <span class="block h-0.5 w-6 bg-current"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white px-5 py-4 lg:hidden">
+            <div class="flex flex-col gap-3">
+                <a href="index.html" class="mobile-link">Home</a>
+                <a href="about.html" class="mobile-link">About</a>
+                <a href="programs.html" class="mobile-link">Programs</a>
+                <a href="impact.html" class="mobile-link">Impact</a>
+                <a href="stories.html" class="mobile-link active">Stories</a>
+                <a href="get-involved.html" class="mobile-link">Get Involved</a>
+                <a href="contact.html" class="mobile-link">Contact</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="pt-36 pb-20 bg-navy text-white">
+
+        <div class="max-w-6xl mx-auto px-6 text-center">
+
+            <span class="inline-block bg-foundationYellow text-navy px-4 py-2 rounded-full text-sm font-bold mb-6">
+                STORIES OF HOPE
+            </span>
+
+            <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                Every Child Has
+                <span class="text-foundationYellow">
+                    a Story
+                </span>
+            </h2>
+
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-200 leading-relaxed">
+                Behind every education journey is a child with dreams,
+                challenges, potential, and a future worth investing in.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="section-padding">
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <span class="text-foundationGreen font-bold uppercase tracking-wide">
+                Why We Tell Stories
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-6">
+                Put people at the heart of the mission
+            </h2>
+
+            <p class="text-gray-600 leading-relaxed text-lg">
+                Numbers can show the scale of an effort, but stories help us
+                understand why the work matters. Through responsible storytelling,
+                we will share the experiences, progress, challenges, and
+                aspirations connected to the foundation's work.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FEATURED STORY ================= -->
+
+    <section class="pb-20">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 rounded-3xl overflow-hidden shadow-lg bg-gray-50">
+
+                <!-- Image Placeholder -->
+
+                <div class="story-image-placeholder min-h-[350px] lg:min-h-[500px]">
+
+                    <div class="text-center px-8">
+
+                        <div class="text-6xl mb-5">
+                            📚
+                        </div>
+
+                        <p class="font-semibold text-gray-600">
+                            Featured story image
+                        </p>
+
+                        <p class="text-sm text-gray-500 mt-2">
+                            Replace with an approved foundation photograph.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Story -->
+
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+
+                    <span class="text-foundationOrange font-bold uppercase tracking-wide text-sm">
+                        Featured Story
+                    </span>
+
+                    <h3 class="text-3xl font-bold text-navy mt-3 mb-5">
+                        A Journey Toward Opportunity
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed mb-5">
+                        This space will feature a verified story from a child,
+                        family, volunteer, teacher, partner, or community
+                        connected to the foundation's work.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed mb-7">
+                        The final story should describe the challenge,
+                        the support provided, the journey, and the outcome—
+                        while protecting the dignity and privacy of the people
+                        involved.
+                    </p>
+
+                    <span class="inline-flex w-fit bg-gray-200 text-gray-600 px-4 py-2 rounded-full text-sm">
+                        Story coming soon
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STORY CATEGORIES ================= -->
+
+    <section class="py-20 bg-gray-50">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="text-center max-w-3xl mx-auto mb-12">
+
+                <span class="text-foundationGreen font-bold uppercase tracking-wide">
+                    Voices & Experiences
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-5">
+                    Stories we will share
+                </h2>
+
+                <p class="text-gray-600">
+                    Our stories will reflect the people and communities connected
+                    to the foundation's mission.
+                </p>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+
+
+                <!-- Story Card 1 -->
+
+                <article class="story-card">
+
+                    <div class="story-card-image">
+                        🎓
+                    </div>
+
+                    <div class="p-6">
+
+                        <span class="story-category">
+                            Student Journey
+                        </span>
+
+                        <h3 class="story-card-title">
+                            From Educational Barriers to Opportunity
+                        </h3>
+
+                        <p class="story-card-text">
+                            A verified story showing how educational support
+                            can help a vulnerable child continue their journey.
+                        </p>
+
+                        <span class="story-coming">
+                            Coming Soon
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Story Card 2 -->
+
+                <article class="story-card">
+
+                    <div class="story-card-image">
+                        🤝
+                    </div>
+
+                    <div class="p-6">
+
+                        <span class="story-category">
+                            Volunteer Story
+                        </span>
+
+                        <h3 class="story-card-title">
+                            Why I Chose to Serve
+                        </h3>
+
+                        <p class="story-card-text">
+                            A volunteer's perspective on contributing time,
+                            skills, and compassion to the mission.
+                        </p>
+
+                        <span class="story-coming">
+                            Coming Soon
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Story Card 3 -->
+
+                <article class="story-card">
+
+                    <div class="story-card-image">
+                        🌍
+                    </div>
+
+                    <div class="p-6">
+
+                        <span class="story-category">
+                            Community
+                        </span>
+
+                        <h3 class="story-card-title">
+                            When a Community Comes Together
+                        </h3>
+
+                        <p class="story-card-text">
+                            A story highlighting community participation,
+                            partnership, and collective action.
+                        </p>
+
+                        <span class="story-coming">
+                            Coming Soon
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Story Card 4 -->
+
+                <article class="story-card">
+
+                    <div class="story-card-image">
+                        💻
+                    </div>
+
+                    <div class="p-6">
+
+                        <span class="story-category">
+                            Skills & Growth
+                        </span>
+
+                        <h3 class="story-card-title">
+                            Learning Beyond the Classroom
+                        </h3>
+
+                        <p class="story-card-text">
+                            A story about skills development, digital literacy,
+                            career preparation, or entrepreneurship.
+                        </p>
+
+                        <span class="story-coming">
+                            Coming Soon
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Story Card 5 -->
+
+                <article class="story-card">
+
+                    <div class="story-card-image">
+                        ❤️
+                    </div>
+
+                    <div class="p-6">
+
+                        <span class="story-category">
+                            Well-being
+                        </span>
+
+                        <h3 class="story-card-title">
+                            Supporting the Whole Child
+                        </h3>
+
+                        <p class="story-card-text">
+                            A story exploring the importance of health,
+                            nutrition, psychosocial support, and education.
+                        </p>
+
+                        <span class="story-coming">
+                            Coming Soon
+                        </span>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Story Card 6 -->
+
+                <article class="story-card">
+
+                    <div class="story-card-image">
+                        🌱
+                    </div>
+
+                    <div class="p-6">
+
+                        <span class="story-category">
+                            Future Leaders
+                        </span>
+
+                        <h3 class="story-card-title">
+                            Growing the Next Generation
+                        </h3>
+
+                        <p class="story-card-text">
+                            Stories about mentorship, leadership, ambition,
+                            and young people preparing to shape their future.
+                        </p>
+
+                        <span class="story-coming">
+                            Coming Soon
+                        </span>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= STORY PRINCIPLES ================= -->
+
+    <section class="section-padding">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <div>
+
+                    <span class="text-foundationGreen font-bold uppercase tracking-wide">
+                        Responsible Storytelling
+                    </span>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-6">
+                        Tell stories with dignity
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-5">
+                        Children should never be reduced to statistics or used
+                        simply to create emotional reactions. Their dignity,
+                        privacy, safety, and best interests must remain central
+                        to every story we publish.
+                    </p>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Before publication, stories and photographs should be
+                        reviewed according to the foundation's safeguarding,
+                        consent, and privacy requirements.
+                    </p>
+
+                </div>
+
+
+                <div class="space-y-4">
+
+                    <div class="story-principle">
+
+                        <span>✓</span>
+
+                        <div>
+                            <h3>
+                                Protect Identity
+                            </h3>
+
+                            <p>
+                                Do not publish sensitive identifying information
+                                without appropriate authorization.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-principle">
+
+                        <span>✓</span>
+
+                        <div>
+                            <h3>
+                                Seek Appropriate Consent
+                            </h3>
+
+                            <p>
+                                Obtain the required consent before using
+                                photographs, interviews, or personal stories.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-principle">
+
+                        <span>✓</span>
+
+                        <div>
+                            <h3>
+                                Preserve Dignity
+                            </h3>
+
+                            <p>
+                                Avoid portraying children or families in ways
+                                that exploit vulnerability.
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="story-principle">
+
+                        <span>✓</span>
+
+                        <div>
+                            <h3>
+                                Tell the Full Story
+                            </h3>
+
+                            <p>
+                                Show people as individuals with aspirations,
+                                strengths, and agency—not only as beneficiaries.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SUBMIT STORY ================= -->
+
+    <section class="py-20 bg-navy text-white">
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <span class="text-foundationYellow font-bold uppercase tracking-wide">
+                Share Your Experience
+            </span>
+
+            <h2 class="text-3xl md:text-5xl font-bold mt-3 mb-6">
+                Are you part of the journey?
+            </h2>
+
+            <p class="text-gray-300 text-lg leading-relaxed mb-8">
+                Students, parents, volunteers, teachers, community members,
+                partners, and supporters may have experiences that help others
+                understand why education matters.
+            </p>
+
+            <a href="contact.html"
+                class="inline-block bg-foundationYellow text-navy px-7 py-4 rounded-lg font-bold hover:opacity-90 transition">
+                Contact the Foundation
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="py-20 bg-foundationYellow">
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+
+            <h2 class="text-3xl md:text-5xl font-bold text-navy mb-6">
+                Help create the next success story.
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-navy/80 text-lg mb-8">
+                Every child deserves the opportunity to learn, grow,
+                graduate, and pursue their dreams.
+            </p>
+
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+                <a href="donate.html"
+                    class="bg-navy text-white px-7 py-4 rounded-lg font-bold hover:opacity-90 transition">
+                    Donate
+                </a>
+
+                <a href="get-involved.html"
+                    class="bg-white text-navy px-7 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                    Get Involved
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-navy text-white pt-16 pb-8">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="images/IMG-20260830-WA0020.jpg" alt="Send a Child to School Foundation logo"
+                            class="w-14 h-14 rounded-full object-cover border border-white/20 bg-white/5">
+
+                        <div>
+                            <div class="text-base font-black tracking-wide text-white">
+                                SEND A CHILD
+                            </div>
+                            <div class="text-xs font-semibold tracking-[0.18em] text-foundationGreen">
+                                TO SCHOOL FOUNDATION
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-blue-200 leading-relaxed text-sm">
+                        Empowering every child through education, hope, and opportunity.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5 text-white">
+                        Explore
+                    </h3>
+
+                    <div class="space-y-3 text-sm">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="about.html" class="footer-link">About</a>
+                        <a href="programs.html" class="footer-link">Programs</a>
+                        <a href="impact.html" class="footer-link">Impact</a>
+                        <a href="stories.html" class="footer-link">Stories</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5 text-white">
+                        Get Involved
+                    </h3>
+
+                    <div class="space-y-3 text-sm">
+                        <a href="donate.html" class="footer-link">Donate</a>
+                        <a href="get-involved.html" class="footer-link">Volunteer</a>
+                        <a href="get-involved.html" class="footer-link">Partner</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5 text-white">
+                        Contact
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-blue-200">
+                        <p class="contact-email">[FOUNDATION EMAIL]</p>
+                        <p class="contact-phone">[FOUNDATION PHONE NUMBER]</p>
+                        <p class="contact-office-address">[FOUNDATION OFFICE ADDRESS]</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-7 text-center text-sm text-blue-300">
+                <p>
+                    © <span id="year"></span>
+                    Send a Child to School Foundation. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/site-config.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

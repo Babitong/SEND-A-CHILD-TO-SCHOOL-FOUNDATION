@@ -1,0 +1,177 @@
+/* ================= DONATE PAGE ================= */
+
+.donation-method {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.04);
+}
+
+.donation-method-header {
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    min-height: 132px;
+}
+
+.donation-method-header > div:last-child {
+    min-width: 0;
+}
+
+.payment-brand {
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.22);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 78% auto;
+    display: block;
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
+}
+
+.payment-brand--bank {
+    background-color: #ffffff;
+    background-image: url('https://www.unionbankcameroon.com/wp-content/uploads/2023/07/Logo-Short11.png');
+}
+
+.payment-brand--mtn {
+    background-color: #ffffff;
+    background-image: url('https://themadon.com/wp-content/uploads/2024/07/mtn-mobile-money-logo.png');
+}
+
+.payment-brand--orange {
+    background-color: #ffffff;
+    background-image: url('https://commons.wikimedia.org/wiki/Special:FilePath/Logo_Orange_Money.svg');
+}
+
+.donation-method-header h3 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.donation-method-header p {
+    font-size: 0.85rem;
+    opacity: 0.8;
+    margin-top: 2px;
+    line-height: 1.4;
+}
+
+.payment-row {
+    position: relative;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.payment-row:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.payment-row > span {
+    display: block;
+    color: #6b7280;
+    font-size: 0.78rem;
+    margin-bottom: 5px;
+}
+
+.payment-row strong {
+    display: block;
+    color: #071B52;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    padding-right: 55px;
+}
+
+.payment-row .copy-btn {
+    position: absolute;
+    right: 0;
+    bottom: 16px;
+    border: 1px solid #d1d5db;
+    background: white;
+    color: #087A2E;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.72rem;
+    font-weight: 700;
+    cursor: pointer;
+    line-height: 1.2;
+    transition: background 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+
+.payment-row .copy-btn:hover {
+    background: #f0fdf4;
+    border-color: #a7f3d0;
+}
+
+.payment-row .copy-btn:active {
+    transform: translateY(1px);
+}
+
+.payment-row:last-child .copy-btn {
+    bottom: 0;
+}
+
+.donation-step {
+    background: white;
+    border-radius: 18px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #e5e7eb;
+}
+
+.donation-step-number {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    background: #087A2E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 1.3rem;
+    font-weight: 800;
+}
+
+.donation-step h3 {
+    color: #071B52;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.donation-step p {
+    color: #6b7280;
+    line-height: 1.6;
+    font-size: 0.92rem;
+}
+
+.support-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.support-item span {
+    width: 27px;
+    height: 27px;
+    min-width: 27px;
+    border-radius: 50%;
+    background: #087A2E;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+.support-item p {
+    color: #4b5563;
+}

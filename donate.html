@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Donate | Send a Child to School Foundation</title>
+
+    <meta name="description"
+        content="Support Send a Child to School Foundation and help vulnerable children access education, stay in school, graduate, and build a brighter future.">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/donate.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: '#071B52',
+                        foundationGreen: '#087A2E',
+                        foundationYellow: '#F5C400',
+                        foundationOrange: '#F47B20'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-white text-gray-800">
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header id="site-header" class="fixed inset-x-0 top-0 z-50 bg-white/95 backdrop-blur border-b border-slate-100">
+
+        <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 lg:px-8" aria-label="Main navigation">
+
+            <!-- LOGO -->
+            <a href="index.html" class="flex items-center gap-3">
+                <img src="images/IMG-20260830-WA0020.jpg" alt="Send a Child to School Foundation logo" width="100">
+
+                <div class="hidden leading-tight sm:block">
+                    <div class="font-extrabold text-navy">
+                        SEND A CHILD
+                    </div>
+
+                    <div class="text-xs font-semibold tracking-wide text-foundationGreen">
+                        TO SCHOOL FOUNDATION
+                    </div>
+                </div>
+            </a>
+
+            <!-- DESKTOP MENU -->
+            <div id="desktop-menu" class="hidden items-center gap-7 lg:flex">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="programs.html" class="nav-link">Programs</a>
+                <a href="impact.html" class="nav-link">Impact</a>
+                <a href="stories.html" class="nav-link">Stories</a>
+                <a href="get-involved.html" class="nav-link">Get Involved</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <!-- DONATE + MOBILE BUTTON -->
+            <div class="flex items-center gap-2">
+                <a href="donate.html"
+                    class="rounded-full bg-foundationOrange px-5 py-3 text-sm font-bold text-white shadow-sm hover:brightness-95">
+                    Donate Now
+                </a>
+
+                <button id="menu-btn" class="rounded-lg p-2 text-navy lg:hidden" aria-label="Open menu"
+                    aria-expanded="false">
+                    <span class="block h-0.5 w-6 bg-current mb-1.5"></span>
+                    <span class="block h-0.5 w-6 bg-current mb-1.5"></span>
+                    <span class="block h-0.5 w-6 bg-current"></span>
+                </button>
+            </div>
+        </nav>
+
+        <!-- MOBILE MENU -->
+        <div id="mobile-menu" class="hidden border-t border-slate-100 bg-white px-5 py-4 lg:hidden">
+            <div class="flex flex-col gap-3">
+                <a href="index.html" class="mobile-link">Home</a>
+                <a href="about.html" class="mobile-link">About</a>
+                <a href="programs.html" class="mobile-link">Programs</a>
+                <a href="impact.html" class="mobile-link">Impact</a>
+                <a href="stories.html" class="mobile-link">Stories</a>
+                <a href="get-involved.html" class="mobile-link">Get Involved</a>
+                <a href="contact.html" class="mobile-link">Contact</a>
+            </div>
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="pt-36 pb-20 bg-navy text-white">
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+
+            <span class="inline-block bg-foundationYellow text-navy px-4 py-2 rounded-full text-sm font-bold mb-6">
+                SUPPORT THE MISSION
+            </span>
+
+            <h2 class="text-4xl md:text-6xl font-bold leading-tight mb-6">
+                Help Put a Child
+                <span class="text-foundationYellow">
+                    in School
+                </span>
+            </h2>
+
+            <p class="max-w-3xl mx-auto text-lg md:text-xl text-gray-200 leading-relaxed">
+                Your contribution can help remove barriers to education and
+                create opportunities for vulnerable children to learn,
+                remain in school, and pursue their dreams.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= INTRO ================= -->
+
+    <section class="section-padding">
+
+        <div class="max-w-4xl mx-auto px-6 text-center">
+
+            <span class="text-foundationGreen font-bold uppercase tracking-wide">
+                Make a Difference
+            </span>
+
+            <h2 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-6">
+                Every contribution matters
+            </h2>
+
+            <p class="text-gray-600 text-lg leading-relaxed">
+                The foundation's mission is to remove barriers to education
+                through educational assistance, mentorship, skills development,
+                health and well-being support, and partnerships.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DONATION METHODS ================= -->
+
+    <section class="pb-20">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="text-center mb-12">
+
+                <span class="text-foundationGreen font-bold uppercase tracking-wide">
+                    Ways to Give
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mt-3">
+                    Choose your preferred method
+                </h2>
+
+            </div>
+
+
+            <div class="grid lg:grid-cols-3 gap-7">
+
+
+                <!-- BANK -->
+
+                <div class="donation-method">
+
+                    <div class="donation-method-header bg-foundationGreen">
+
+                        <div class="payment-brand payment-brand--bank" aria-label="Union Bank Cameroon"></div>
+
+                        <div>
+                            <h3>
+                                Bank Transfer
+                            </h3>
+
+                            <p>
+                                Union Bank Cameroon
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="p-7 space-y-5">
+
+                        <div class="payment-row">
+
+                            <span>
+                                Account Name
+                            </span>
+
+                            <strong>
+                                Send a Child to School Foundation
+                            </strong>
+
+                        </div>
+
+
+                        <div class="payment-row">
+
+                            <span>
+                                Account Number
+                            </span>
+
+                            <strong>
+                                6080000040
+                            </strong>
+
+                            <button class="copy-btn" data-copy="6080000040">
+                                Copy
+                            </button>
+
+                        </div>
+
+
+                        <div class="payment-row">
+
+                            <span>
+                                Bank Code
+                            </span>
+
+                            <strong>
+                                10023
+                            </strong>
+
+                        </div>
+
+
+                        <div class="payment-row">
+
+                            <span>
+                                Branch Code
+                            </span>
+
+                            <strong>
+                                00030
+                            </strong>
+
+                        </div>
+
+
+                        <div class="payment-row">
+
+                            <span>
+                                Key
+                            </span>
+
+                            <strong>
+                                61
+                            </strong>
+
+                        </div>
+
+
+                        <div class="payment-row">
+
+                            <span>
+                                IBAN
+                            </span>
+
+                            <strong class="break-all">
+                                CM21 1002 3000 3060 8000 004 061
+                            </strong>
+
+                            <button class="copy-btn" data-copy="CM21 1002 3000 3060 8000 004 061">
+                                Copy
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- MTN -->
+
+                <div class="donation-method">
+
+                    <div class="donation-method-header bg-yellow-400 text-navy">
+
+                        <div class="payment-brand payment-brand--mtn" aria-label="MTN Mobile Money"></div>
+
+                        <div>
+                            <h3>
+                                MTN Mobile Money
+                            </h3>
+
+                            <p>
+                                Cameroon
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="p-7 space-y-5">
+
+                        <div>
+
+                            <p class="text-sm text-gray-500 mb-2">
+                                Mobile Money Number 1
+                            </p>
+
+                            <div class="flex items-center justify-between gap-3">
+
+                                <strong class="text-navy">
+                                    +237 679 752 399
+                                </strong>
+
+                                <button class="copy-btn" data-copy="+237 679 752 399">
+                                    Copy
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="border-t pt-5">
+
+                            <p class="text-sm text-gray-500 mb-2">
+                                Mobile Money Number 2
+                            </p>
+
+                            <div class="flex items-center justify-between gap-3">
+
+                                <strong class="text-navy">
+                                    +237 653 835 509
+                                </strong>
+
+                                <button class="copy-btn" data-copy="+237 653 835 509">
+                                    Copy
+                                </button>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="bg-gray-50 rounded-xl p-4 text-sm text-gray-600">
+
+                            <strong class="text-navy">
+                                How to give:
+                            </strong>
+
+                            <p class="mt-2">
+                                Send your contribution to either MTN Mobile
+                                Money number above and retain your transaction
+                                confirmation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ORANGE -->
+
+                <div class="donation-method">
+
+                    <div class="donation-method-header bg-foundationOrange text-white">
+
+                        <div class="payment-brand payment-brand--orange" aria-label="Orange Money"></div>
+
+                        <div>
+                            <h3>
+                                Orange Money
+                            </h3>
+
+                            <p>
+                                Cameroon
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="p-7">
+
+                        <p class="text-sm text-gray-500 mb-3">
+                            Orange Money Number
+                        </p>
+
+                        <div class="flex items-center justify-between gap-3 mb-7">
+
+                            <strong class="text-xl text-navy">
+                                +237 691 551 379
+                            </strong>
+
+                            <button class="copy-btn" data-copy="+237 691 551 379">
+                                Copy
+                            </button>
+
+                        </div>
+
+
+                        <div class="bg-gray-50 rounded-xl p-4 text-sm text-gray-600">
+
+                            <strong class="text-navy">
+                                How to give:
+                            </strong>
+
+                            <p class="mt-2">
+                                Send your contribution through Orange Money
+                                using the number above and keep your transaction
+                                confirmation.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DONATION PROCESS ================= -->
+
+    <section class="py-20 bg-gray-50">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="text-center max-w-3xl mx-auto mb-14">
+
+                <span class="text-foundationGreen font-bold uppercase tracking-wide">
+                    Simple Process
+                </span>
+
+                <h2 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-5">
+                    How to make your contribution
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+
+                <div class="donation-step">
+
+                    <div class="donation-step-number">
+                        1
+                    </div>
+
+                    <h3>
+                        Choose a Method
+                    </h3>
+
+                    <p>
+                        Select bank transfer, MTN Mobile Money, or Orange Money.
+                    </p>
+
+                </div>
+
+
+                <div class="donation-step">
+
+                    <div class="donation-step-number">
+                        2
+                    </div>
+
+                    <h3>
+                        Make Your Contribution
+                    </h3>
+
+                    <p>
+                        Send your contribution using the official payment
+                        details provided above.
+                    </p>
+
+                </div>
+
+
+                <div class="donation-step">
+
+                    <div class="donation-step-number">
+                        3
+                    </div>
+
+                    <h3>
+                        Keep Your Confirmation
+                    </h3>
+
+                    <p>
+                        Retain your transaction confirmation for your records.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WHAT YOUR SUPPORT ENABLES ================= -->
+
+    <section class="section-padding">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="grid lg:grid-cols-2 gap-14 items-center">
+
+                <div>
+
+                    <span class="text-foundationGreen font-bold uppercase tracking-wide">
+                        Your Support
+                    </span>
+
+                    <h2 class="text-3xl md:text-4xl font-bold text-navy mt-3 mb-6">
+                        Help remove barriers to education
+                    </h2>
+
+                    <p class="text-gray-600 leading-relaxed mb-7">
+                        Contributions can support activities aligned with
+                        the foundation's educational mission and objectives.
+                    </p>
+
+
+                    <div class="space-y-4">
+
+                        <div class="support-item">
+                            <span>✓</span>
+                            <p>
+                                School fees and educational assistance
+                            </p>
+                        </div>
+
+                        <div class="support-item">
+                            <span>✓</span>
+                            <p>
+                                School supplies and uniforms
+                            </p>
+                        </div>
+
+                        <div class="support-item">
+                            <span>✓</span>
+                            <p>
+                                Mentorship and leadership development
+                            </p>
+                        </div>
+
+                        <div class="support-item">
+                            <span>✓</span>
+                            <p>
+                                Career, digital literacy, and skills development
+                            </p>
+                        </div>
+
+                        <div class="support-item">
+                            <span>✓</span>
+                            <p>
+                                Health, nutrition, and psychosocial support
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bg-navy rounded-3xl p-10 text-white">
+
+                    <div class="text-5xl mb-6">
+                        🎓
+                    </div>
+
+                    <h3 class="text-2xl md:text-3xl font-bold mb-5">
+                        Education Today.
+                        <br>
+                        Hope for Tomorrow.
+                    </h3>
+
+                    <p class="text-gray-300 leading-relaxed">
+                        The foundation's goal is a future where no child is
+                        denied quality education because of poverty.
+                    </p>
+
+                    <div class="mt-8 pt-7 border-t border-white/10">
+
+                        <p class="text-foundationYellow font-bold">
+                            Every Child in School.
+                        </p>
+
+                        <p class="text-white font-bold">
+                            Every Dream Within Reach.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= DONOR NOTE ================= -->
+
+    <section class="py-20 bg-gray-50">
+
+        <div class="max-w-4xl mx-auto px-6">
+
+            <div class="bg-white border border-gray-200 rounded-2xl p-8 md:p-10">
+
+                <div class="flex gap-4 items-start">
+
+                    <div class="text-3xl">
+                        🔐
+                    </div>
+
+                    <div>
+
+                        <h2 class="text-2xl font-bold text-navy mb-4">
+                            Need to contact us about your donation?
+                        </h2>
+
+                        <p class="text-gray-600 leading-relaxed mb-4">
+                            Please verify the recipient name and payment details
+                            before completing a transaction.
+                        </p>
+
+                        <p class="text-gray-600 leading-relaxed">
+                            If you have questions about a donation or need
+                            confirmation of payment details, please
+                            <a href="contact.html"
+                                class="font-semibold text-foundationGreen underline underline-offset-2">
+                                contact the foundation directly
+                            </a>.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+
+    <section class="py-20 bg-foundationGreen text-white">
+
+        <div class="max-w-5xl mx-auto px-6 text-center">
+
+            <h2 class="text-3xl md:text-5xl font-bold mb-6">
+                Can't donate right now?
+            </h2>
+
+            <p class="max-w-2xl mx-auto text-green-50 text-lg mb-8">
+                Your support doesn't have to be financial. You can volunteer,
+                partner with us, advocate for education, or share the mission
+                with others.
+            </p>
+
+
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+
+                <a href="get-involved.html"
+                    class="bg-white text-foundationGreen px-7 py-4 rounded-lg font-bold hover:bg-gray-100 transition">
+                    Get Involved
+                </a>
+
+                <a href="contact.html"
+                    class="bg-navy text-white px-7 py-4 rounded-lg font-bold hover:opacity-90 transition">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="bg-navy text-white pt-16 pb-8">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12">
+
+                <div>
+                    <div class="flex items-center gap-3 mb-5">
+                        <img src="images/IMG-20260830-WA0020.jpg" alt="Send a Child to School Foundation logo"
+                            class="w-14 h-14 rounded-full object-cover border border-white/20 bg-white/5">
+
+                        <div>
+                            <div class="text-base font-black tracking-wide text-white">
+                                SEND A CHILD
+                            </div>
+                            <div class="text-xs font-semibold tracking-[0.18em] text-foundationGreen">
+                                TO SCHOOL FOUNDATION
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="text-blue-200 leading-relaxed text-sm">
+                        Educate. Empower. Transform lives.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5 text-white">
+                        Explore
+                    </h3>
+
+                    <div class="space-y-3 text-sm">
+                        <a href="index.html" class="footer-link">Home</a>
+                        <a href="about.html" class="footer-link">About</a>
+                        <a href="programs.html" class="footer-link">Programs</a>
+                        <a href="impact.html" class="footer-link">Impact</a>
+                        <a href="stories.html" class="footer-link">Stories</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5 text-white">
+                        Get Involved
+                    </h3>
+
+                    <div class="space-y-3 text-sm">
+                        <a href="donate.html" class="footer-link">Donate</a>
+                        <a href="get-involved.html" class="footer-link">Volunteer</a>
+                        <a href="get-involved.html" class="footer-link">Partner</a>
+                        <a href="contact.html" class="footer-link">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-5 text-white">
+                        Contact
+                    </h3>
+
+                    <div class="space-y-3 text-sm text-blue-200">
+                        <p class="contact-email">[FOUNDATION EMAIL]</p>
+                        <p class="contact-phone">[FOUNDATION PHONE NUMBER]</p>
+                        <p class="contact-office-address">[FOUNDATION OFFICE ADDRESS]</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-white/10 pt-7 text-center text-sm text-blue-300">
+                <p>
+                    © <span id="year"></span>
+                    Send a Child to School Foundation. All rights reserved.
+                </p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/site-config.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
